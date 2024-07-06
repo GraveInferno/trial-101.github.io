@@ -318,7 +318,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   gap: 10px;
 }
 
@@ -363,7 +363,7 @@ footer {
   color: #fdfcfc;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .main-nav {
     grid-area: auto;
     padding: 0 30px 0 20px;
@@ -398,11 +398,11 @@ footer {
   display: grid;
 }
 
-.box img {
+ .box img {
   border-radius: 5px;
   height: 200px;
   width: relative;
-}
+ }
   .company__bg__image__container {
     height: 100vh;
   }
@@ -462,6 +462,7 @@ footer {
   }
   .FAQ__list {
     padding: 1rem 5rem;
+    text-align: justify;
   }
   .FAQ__get__started__email {
     width: 75%;
@@ -472,12 +473,13 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
+
+@media (min-width: 1025px) and (max-width: 1280px) {
   .navbar {
     padding: 2% 5%;
   }
   .company__bg__overlay{
-    height: 75vh;
+    height: 42vh;
   }
   .navbar__brand {
     width: 200px;
@@ -518,6 +520,9 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+  }
+  .company__card{
+    top: 20%;
   }
 
   .feature__details {
@@ -599,6 +604,14 @@ footer {
     grid-area: auto;
     padding: 0 30px 0 20px;
     color: white;
+  }
+  .main-nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .main-nav a:hover {
+    color: #ccc;
   }
   .main-container {
     padding: 100px;
