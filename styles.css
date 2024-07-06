@@ -79,17 +79,11 @@ body {
   z-index: -2;
 }
 
-.company__bg__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .company__bg__overlay {
-  position: absolute;
+  position:absolute;
   inset: 0;
-  width: 100% auto;
-  height: 80vh auto;
+  width: 100%;
+  height: 100vh auto;
   background: rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(
     to top,
@@ -389,7 +383,7 @@ footer {
   .box {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(90px, 3fr));
   }
   
 .box a {
@@ -414,10 +408,10 @@ footer {
   }
 
   .company__bg__overlay {
-    height: 30vh;
+    height: 42vh;
   }
   .company__card {
-    top: 40%;
+    top: 20%;
     left: 30%;
     transform: translate(-20%, -20%);
   }
@@ -481,13 +475,19 @@ footer {
 @media (min-width: 1024px) {
   .navbar {
     padding: 2% 5%;
-    
   }
-
+  .company__bg__overlay{
+    height: 75vh;
+  }
   .navbar__brand {
     width: 200px;
   }
-
+  .company__card{
+    top: 30%;
+  }
+  .feature__title{
+    top : 20%;
+  }
   .signin__button {
     padding: 10px 20px;
     font-size: 18px;
@@ -551,6 +551,7 @@ footer {
   }
   .FAQ__list {
     padding: 1rem 25rem;
+    text-align: justify;
   }
   .FAQ__get__started__email {
     transform: translateX(16%);
@@ -625,9 +626,4 @@ footer {
   height: 200px;
   width: relative;
 }
-}
-
-
-@media (min-width: 1245px) {
-  
 }
