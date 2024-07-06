@@ -414,8 +414,7 @@ footer {
   }
 
   .company__bg__overlay {
-    height: 30vh auto;
-    postition: absolute; 
+    height: 30vh;
   }
   .company__card {
     top: 40%;
